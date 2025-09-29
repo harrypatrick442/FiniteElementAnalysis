@@ -8,9 +8,6 @@ using FiniteElementAnalysis.Fields;
 using FiniteElementAnalysis.Mesh;
 using FiniteElementAnalysis.Mesh.Tetrahedral;
 using FiniteElementAnalysis.Solvers;
-using GlobalConstants;
-using System.Reflection.Metadata.Ecma335;
-using System.Xml.Linq;
 
 namespace FiniteElementAnalysis.Results
 {

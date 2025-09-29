@@ -1,15 +1,9 @@
-﻿using Core.Arguments;
-using FiniteElementAnalysis.Boundaries;
+﻿using FiniteElementAnalysis.Boundaries;
 using FiniteElementAnalysis.Fields;
 using FiniteElementAnalysis.Mesh;
 using FiniteElementAnalysis.Mesh.Tetrahedral;
 using FiniteElementAnalysis.MeshGeneration;
-using GlobalConstants;
-using System;
-using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Xml.Linq;
 
 namespace FiniteElementAnalysis.Ply
 {

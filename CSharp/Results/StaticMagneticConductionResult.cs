@@ -1,5 +1,4 @@
-﻿using Core.Collections;
-using Core.Maths;
+﻿using Core.Maths;
 using Core.Maths.Tensors;
 using Core.Maths.Vectors;
 using FiniteElementAnalysis.Boundaries;
@@ -7,8 +6,6 @@ using FiniteElementAnalysis.Interpolation;
 using FiniteElementAnalysis.Mesh;
 using FiniteElementAnalysis.Mesh.Tetrahedral;
 using FiniteElementAnalysis.Solvers;
-using GlobalConstants;
-using System.Xml.Linq;
 
 namespace FiniteElementAnalysis.Results
 {

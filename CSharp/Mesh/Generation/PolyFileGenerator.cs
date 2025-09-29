@@ -1,7 +1,6 @@
 ﻿using Core.Maths.Tensors;
 using FiniteElementAnalysis.Boundaries;
 using FiniteElementAnalysis.Polyhedrals;
-using GlobalConstants;
 using System.Text;
 
 namespace FiniteElementAnalysis.Mesh.Generation

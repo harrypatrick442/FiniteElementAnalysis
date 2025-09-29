@@ -1,17 +1,10 @@
-﻿using Core.Maths.Tensors;
-using Core.Maths;
-using System.Numerics;
-using GlobalConstants;
-using FiniteElementAnalysis.Boundaries;
-using Snippets.NativeExtensions;
-using FiniteElementAnalysis.Boundaries.Thermal;
+﻿using FiniteElementAnalysis.Boundaries;
 using FiniteElementAnalysis.Fields;
 using FiniteElementAnalysis.Results;
 using Core.FileSystem;
 using FiniteElementAnalysis.SourceRegions;
 using Core.Pool;
 using FiniteElementAnalysis.Mesh.Tetrahedral;
-using FiniteElementAnalysis.Mesh;
 using Core.Maths.Matrices;
 
 namespace FiniteElementAnalysis.Solvers

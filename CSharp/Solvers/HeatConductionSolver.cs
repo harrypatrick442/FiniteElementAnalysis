@@ -1,9 +1,5 @@
-﻿using Core.Maths.Tensors;
-using Core.Maths;
-using System.Numerics;
-using GlobalConstants;
+﻿using Core.Maths;
 using FiniteElementAnalysis.Boundaries;
-using Snippets.NativeExtensions;
 using FiniteElementAnalysis.Boundaries.Thermal;
 using FiniteElementAnalysis.Fields;
 using FiniteElementAnalysis.Results;
