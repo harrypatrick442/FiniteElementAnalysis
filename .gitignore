@@ -17,3 +17,5 @@ CSharp/FiniteElementAnalysis.csproj.user
 /LinearStaticAnalysisExample/output
 /SimpleCurrentDensityExample/output
 /TotoidMagneticConductionExample/output
+/.vs
+/LinearStaticAnalysisExample/bin

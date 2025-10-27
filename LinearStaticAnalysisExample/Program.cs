@@ -19,6 +19,8 @@ using FiniteElementAnalysis.Results;
 using FiniteElementAnalysis.Mesh.Tetrahedral;
 using FiniteElementAnalysis.Mesh.Generation;
 using FiniteElementAnalysis.Boundaries.Statics;
+using System.IO;
+using System.Reflection;
 
 namespace BuckingFieldExperimentation
 {
@@ -57,15 +59,16 @@ namespace BuckingFieldExperimentation
             VolumesCollection volumes = new VolumesCollection(
                 new StaticLinearElasticVolume(MATERIAL_VOLUME, S275_YOUNGS_MODULUS, S275_POISONS_RATIO)
             );
+            string exeDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location)!;
+            string beamObjFilePath = Path.Combine(exeDirectory, "..\\..\\..\\Models\\Cantilever.obj");
             PolyhedralDomain domain = ObjFileToPoly.Read(
-                //File.ReadAllBytes("C:\\repos\\snippets\\CircuitAnalysis\\VoltageMultiplier\\Meshes\\TestWindings.obj")
-                File.ReadAllBytes("C:\\repos\\snippets\\CircuitAnalysis\\LinearStaticAnalysisExample\\Models\\Cantilever.obj"),
+                File.ReadAllBytes(beamObjFilePath),
                 volumes,
                 boundaries,
                 out Dictionary<int, Boundary> mapMarkerToBoundary,
                 Units.Millimeters,
                 0.00001d);
-            string tempDirectoryPath = "D:\\temp\\";
+            string tempDirectoryPath = Path.GetTempPath();
             using (TemporaryDirectory temporaryDirectory = TemporaryDirectory
                 .InCustomTempDirectory(tempDirectoryPath))
             {
