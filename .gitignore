@@ -19,3 +19,7 @@ CSharp/FiniteElementAnalysis.csproj.user
 /TotoidMagneticConductionExample/output
 /.vs
 /LinearStaticAnalysisExample/bin
+/LinearStaticAnalysisExample2Beam/.vs
+/MagneticConeExample/bin
+/MagneticConeExample/obj
+/MagneticConeExample/output
